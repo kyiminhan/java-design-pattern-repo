@@ -57,7 +57,7 @@ public class App {
 	 *
 	 * @return FrontDeskSupport
 	 */
-	@Bean("frontDeskSupportBean")
+	@Bean(name = "frontDeskSupportBean")
 	public FrontDeskSupport frontDeskSupportBean() {
 		final FrontDeskSupport service = new FrontDeskSupport();
 		service.setNext(this.supervisorSupportBean());
@@ -69,7 +69,7 @@ public class App {
 	 *
 	 * @return SupervisorSupport
 	 */
-	@Bean("supervisorSupportBean")
+	@Bean(name = "supervisorSupportBean")
 	public SupervisorSupport supervisorSupportBean() {
 		final SupervisorSupport service = new SupervisorSupport();
 		service.setNext(this.managerSupportBean());
@@ -81,7 +81,7 @@ public class App {
 	 *
 	 * @return ManagerSupport
 	 */
-	@Bean("managerSupportBean")
+	@Bean(name = "managerSupportBean")
 	public ManagerSupport managerSupportBean() {
 		final ManagerSupport service = new ManagerSupport();
 		service.setNext(this.directorSupportBean());
@@ -93,7 +93,7 @@ public class App {
 	 *
 	 * @return DirectorSupport
 	 */
-	@Bean("directorSupportBean")
+	@Bean(name = "directorSupportBean")
 	public DirectorSupport directorSupportBean() {
 		final DirectorSupport service = new DirectorSupport();
 		return service;
