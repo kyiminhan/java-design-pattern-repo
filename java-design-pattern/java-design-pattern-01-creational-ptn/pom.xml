@@ -7,7 +7,7 @@
 		<artifactId>java-design-pattern</artifactId>
 		<version>0.0.1</version>
 	</parent>
-	<artifactId>java-design-pattern-creationals-ptn</artifactId>
+	<artifactId>java-design-pattern-01-creational-ptn</artifactId>
 
 	<dependencies>
 		<dependency>
@@ -28,4 +28,5 @@
 			<version>2.11.2</version>
 		</dependency>
 	</dependencies>
+	<name>java-design-pattern-01-creational-ptn</name>
 </project>
