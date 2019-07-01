@@ -1,4 +1,4 @@
-package com.java.singleton;
+package com.core.java.singleton.recomand;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -33,6 +33,15 @@ public class LazySingleton_02 {
 			}
 		}
 		return LazySingleton_02.instance;
+	}
+
+	/**
+	 * Read resolve.
+	 *
+	 * @return Object
+	 */
+	protected Object readResolve() {
+		return LazySingleton_02.getInstance();
 	}
 
 	/**

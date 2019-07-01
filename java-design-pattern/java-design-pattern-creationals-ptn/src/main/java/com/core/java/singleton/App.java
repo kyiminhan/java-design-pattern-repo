@@ -1,4 +1,4 @@
-package com.java.singleton;
+package com.core.java.singleton;
 
 /**
  * The Class App. <BR>
@@ -17,7 +17,7 @@ public class App {
 	 *
 	 * @param args the arguments
 	 */
-	public static void main(final String[] args) {
+	public static void main(final String... args) {
 
 		BillPughSingleton.getInstance().show();
 

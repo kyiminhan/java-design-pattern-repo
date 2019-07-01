@@ -1,4 +1,4 @@
-package com.java.singleton;
+package com.core.java.singleton;
 
 import lombok.extern.log4j.Log4j2;
 
