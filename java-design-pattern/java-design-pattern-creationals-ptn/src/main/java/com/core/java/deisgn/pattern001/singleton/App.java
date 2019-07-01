@@ -8,7 +8,7 @@ package com.core.java.deisgn.pattern001.singleton;
  * @since 2019/07/01 <BR>
  *        java-design-pattern-creationals-ptn system <BR>
  *        com.core.java.deisgn.pattern001.singleton <BR>
- *        App.java <BR
+ *        App.java <BR>
  */
 public class App {
 

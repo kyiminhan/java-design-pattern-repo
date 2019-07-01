@@ -15,7 +15,7 @@ import lombok.ToString;
  * @since 2019/07/01 <BR>
  *        java-design-pattern-creationals-ptn system <BR>
  *        com.core.java.deisgn.pattern002.builder <BR>
- *        Student.java <BR
+ *        Student.java <BR>
  */
 @Getter
 @Setter

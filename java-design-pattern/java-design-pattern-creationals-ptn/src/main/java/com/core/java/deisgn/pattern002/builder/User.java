@@ -8,7 +8,7 @@ package com.core.java.deisgn.pattern002.builder;
  * @since 2019/07/01 <BR>
  *        java-design-pattern-creationals-ptn system <BR>
  *        com.core.java.deisgn.pattern002.builder <BR>
- *        User.java <BR
+ *        User.java <BR>
  */
 public class User {
 
@@ -106,7 +106,7 @@ public class User {
 	 * @since 2019/07/01 <BR>
 	 *        java-design-pattern-creationals-ptn system <BR>
 	 *        com.core.java.deisgn.pattern002.builder <BR>
-	 *        User.java <BR
+	 *        User.java <BR>
 	 */
 	public static class UserBuilder {
 
