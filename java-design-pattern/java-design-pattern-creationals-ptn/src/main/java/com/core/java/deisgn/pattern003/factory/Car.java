@@ -15,9 +15,6 @@ import lombok.Setter;
  */
 public abstract class Car {
 
-	public Car() {
-	}
-
 	/**
 	 * Instantiates a new car.
 	 *
