@@ -27,21 +27,13 @@ public class DirectorSupport implements SupportServiceItf {
 	 */
 	@Override
 	public void handleRequest(final ServiceRequest request) {
-
 		if (request.getType() == ServiceLevel.LEVEL_FOUR) {
-
 			request.setConclusion("Director solved level four reuqest !!");
-
 		} else {
-
 			if (this.next != null) {
-
 				this.next.handleRequest(request);
-
 			} else {
-
 				request.setConclusion("You problem is none of our business");
-
 				throw new IllegalArgumentException("You problem is none of our business :: " + request.getType());
 			}
 		}

@@ -27,21 +27,13 @@ public class ManagerSupport implements SupportServiceItf {
 	 */
 	@Override
 	public void handleRequest(final ServiceRequest request) {
-
 		if (request.getType() == ServiceLevel.LEVEL_THREE) {
-
 			request.setConclusion("Manager solved level three reuqest !!");
-
 		} else {
-
 			if (this.next != null) {
-
 				this.next.handleRequest(request);
-
 			} else {
-
 				throw new IllegalArgumentException("No handler found for :: " + request.getType());
-
 			}
 		}
 	}

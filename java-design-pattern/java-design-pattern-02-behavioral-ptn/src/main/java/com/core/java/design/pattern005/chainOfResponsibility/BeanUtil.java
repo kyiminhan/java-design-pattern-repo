@@ -44,7 +44,6 @@ public class BeanUtil {
 	 * @return the bean
 	 */
 	public Object getBean(final String beanName) {
-
 		return this.getContext().getBean(beanName);
 	}
 }

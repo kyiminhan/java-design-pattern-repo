@@ -27,18 +27,12 @@ public class FrontDeskSupport implements SupportServiceItf {
 	 */
 	@Override
 	public void handleRequest(final ServiceRequest service) {
-
 		if (service.getType() == ServiceLevel.LEVEL_ONE) {
-
 			service.setConclusion("Front desk solved level one reuqest !!");
-
 		} else {
-
 			if (this.next != null) {
-
 				this.next.handleRequest(service);
 			} else {
-
 				throw new IllegalArgumentException("No handler found for :: " + service.getType());
 			}
 		}

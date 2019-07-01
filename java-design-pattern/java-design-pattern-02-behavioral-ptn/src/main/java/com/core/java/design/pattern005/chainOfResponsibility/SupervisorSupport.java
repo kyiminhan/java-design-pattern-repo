@@ -27,22 +27,14 @@ public class SupervisorSupport implements SupportServiceItf {
 	 */
 	@Override
 	public void handleRequest(final ServiceRequest request) {
-
 		if (request.getType() == ServiceLevel.LEVEL_TWO) {
-
 			request.setConclusion("Supervisor solved level two reuqest !!");
-
 		} else {
-
 			if (this.next != null) {
-
 				this.next.handleRequest(request);
-
 			} else {
-
 				throw new IllegalArgumentException("No handler found for :: " + request.getType());
 			}
 		}
 	}
-
 }

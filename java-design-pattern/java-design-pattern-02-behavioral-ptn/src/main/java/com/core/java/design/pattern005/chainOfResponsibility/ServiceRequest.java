@@ -24,5 +24,4 @@ public class ServiceRequest {
 	@Getter
 	@Setter
 	private String conclusion = null;
-
 }
