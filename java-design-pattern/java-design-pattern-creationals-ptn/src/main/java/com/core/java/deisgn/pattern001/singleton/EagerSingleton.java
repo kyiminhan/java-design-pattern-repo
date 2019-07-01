@@ -1,4 +1,4 @@
-package com.core.java.singleton;
+package com.core.java.deisgn.pattern001.singleton;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -9,7 +9,7 @@ import lombok.extern.log4j.Log4j2;
  * @version 1.0 <BR>
  * @since 2019/07/01 <BR>
  *        java-design-pattern-creationals-ptn system <BR>
- *        com.java.singleton <BR>
+ *        com.core.java.deisgn.pattern001.singleton <BR>
  *        EagerSingleton.java <BR
  */
 @Log4j2
