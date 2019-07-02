@@ -1,5 +1,7 @@
 package com.core.java.design.pattern005.chainOfResponsibility;
 
+import java.io.Serializable;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -13,7 +15,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  *        com.core.java.design.pattern005.chainOfResponsibility <BR>
  *        AppUtil.java <BR>
  */
-public class BeanUtil {
+public class BeanUtil implements Serializable {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 1L;
 
 	/** The instance. */
 	private volatile static BeanUtil instance;
@@ -27,12 +32,28 @@ public class BeanUtil {
 	public static BeanUtil getInstance() {
 		if (null == BeanUtil.instance) {
 			synchronized (BeanUtil.class) {
-				BeanUtil.instance = new BeanUtil();
+				if (null == BeanUtil.instance) {
+					BeanUtil.instance = new BeanUtil();
+				}
 			}
 		}
 		return BeanUtil.instance;
 	}
 
+	/**
+	 * Read resolve.
+	 *
+	 * @return Object
+	 */
+	protected Object readResolve() {
+		return BeanUtil.getInstance();
+	}
+
+	/**
+	 * Gets the context.
+	 *
+	 * @return the context
+	 */
 	private ApplicationContext getContext() {
 		return new AnnotationConfigApplicationContext(AppConfig.class);
 	}
