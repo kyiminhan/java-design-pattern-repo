@@ -1,15 +1,15 @@
-package com.core.java.design.pattern001.singleton.recomand;
+package com.core.java.design.pattern001.singleton.recommend;
 
 import lombok.extern.log4j.Log4j2;
 
 /**
- * The Class LazySingleton_02.<BR>
+ * The Class LazySingleton_02. <BR>
  *
  * @author KYIMINHAN <BR>
  * @version 1.0 <BR>
- * @since Jul 2, 2019 <BR>
+ * @since 2019/07/02 <BR>
  *        java-design-pattern-01-creational-ptn system <BR>
- *        com.core.java.design.pattern001.singleton.recomand <BR>
+ *        com.core.java.design.pattern001.singleton.recommend <BR>
  *        LazySingleton_02.java <BR>
  */
 @Log4j2
