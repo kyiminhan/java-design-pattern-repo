@@ -28,6 +28,9 @@ public class StopFanCommand implements ICommand {
 		this.fan = fan;
 	}
 
+	/**
+	 * Execute.
+	 */
 	@Override
 	public void execute() {
 		StopFanCommand.log.info("stopping Fan.");

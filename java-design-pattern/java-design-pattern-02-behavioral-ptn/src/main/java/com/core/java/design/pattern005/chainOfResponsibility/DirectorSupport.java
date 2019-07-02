@@ -13,11 +13,11 @@ import lombok.Setter;
  *        com.core.java.design.pattern005.chainOfResponsibility <BR>
  *        DirectorSupport.java <BR>
  */
+@Getter
+@Setter
 public class DirectorSupport implements SupportServiceItf {
 
 	/** The next. */
-	@Getter
-	@Setter
 	private SupportServiceItf next = null;
 
 	/**

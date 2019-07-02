@@ -16,22 +16,22 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-	// <bean id="supportService" class="com.howtodoinjava.handler.SupportService">
+	// <bean id="supportService" class="com.handler.SupportService">
 	// <property name="handler" ref="frontDeskSupport"></property>
 	// </bean>
 	// <bean id="frontDeskSupport"
-	// class="com.howtodoinjava.handler.FrontDeskSupport">
+	// class="com.handler.FrontDeskSupport">
 	// <property name="next" ref="supervisorSupport"></property>
 	// </bean>
 	// <bean id="supervisorSupport"
-	// class="com.howtodoinjava.handler.SupervisorSupport">
+	// class="com.handler.SupervisorSupport">
 	// <property name="next" ref="managerSupport"></property>
 	// </bean>
-	// <bean id="managerSupport" class="com.howtodoinjava.handler.ManagerSupport">
+	// <bean id="managerSupport" class="com.handler.ManagerSupport">
 	// <property name="next" ref="directorSupport"></property>
 	// </bean>
 	// <bean id="directorSupport"
-	// class="com.howtodoinjava.handler.DirectorSupport"></bean>
+	// class="com.handler.DirectorSupport"></bean>
 
 	/**
 	 * Support service bean.

@@ -13,15 +13,13 @@ import lombok.Setter;
  *        com.core.java.design.pattern005.chainOfResponsibility <BR>
  *        ServiceRequest.java <BR>
  */
+@Getter
+@Setter
 public class ServiceRequest {
 
 	/** The type. */
-	@Getter
-	@Setter
 	private ServiceLevel type;
 
 	/** The conclusion. */
-	@Getter
-	@Setter
 	private String conclusion = null;
 }
