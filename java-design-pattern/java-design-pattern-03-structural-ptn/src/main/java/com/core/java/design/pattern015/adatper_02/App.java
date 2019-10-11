@@ -1,5 +1,7 @@
 package com.core.java.design.pattern015.adatper_02;
 
+import lombok.extern.log4j.Log4j2;
+
 /**
  * The Class App. <BR>
  *
@@ -10,6 +12,7 @@ package com.core.java.design.pattern015.adatper_02;
  *        com.core.java.design.pattern015.adatper_02 <BR>
  *        App.java <BR>
  */
+@Log4j2
 public class App {
 
 	/**
@@ -34,9 +37,9 @@ public class App {
 		final Volt v12 = App.getVolt(sockAdapter, 12);
 		final Volt v120 = App.getVolt(sockAdapter, 120);
 
-		System.out.println("v3 volts using Object Adapter=" + v3.getVolts());
-		System.out.println("v12 volts using Object Adapter=" + v12.getVolts());
-		System.out.println("v120 volts using Object Adapter=" + v120.getVolts());
+		App.log.info("v3 volts using Object Adapter=" + v3.getVolts());
+		App.log.info("v12 volts using Object Adapter=" + v12.getVolts());
+		App.log.info("v120 volts using Object Adapter=" + v120.getVolts());
 	}
 
 	/**
@@ -50,9 +53,9 @@ public class App {
 		final Volt v12 = App.getVolt(sockAdapter, 12);
 		final Volt v120 = App.getVolt(sockAdapter, 120);
 
-		System.out.println("v3 volts using Class Adapter=" + v3.getVolts());
-		System.out.println("v12 volts using Class Adapter=" + v12.getVolts());
-		System.out.println("v120 volts using Class Adapter=" + v120.getVolts());
+		App.log.info("v3 volts using Class Adapter=" + v3.getVolts());
+		App.log.info("v12 volts using Class Adapter=" + v12.getVolts());
+		App.log.info("v120 volts using Class Adapter=" + v120.getVolts());
 	}
 
 	/**
