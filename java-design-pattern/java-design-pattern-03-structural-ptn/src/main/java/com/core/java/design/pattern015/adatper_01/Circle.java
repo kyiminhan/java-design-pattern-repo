@@ -1,4 +1,4 @@
-package com.core.java.design.pattern015.adatper;
+package com.core.java.design.pattern015.adatper_01;
 
 import lombok.extern.log4j.Log4j2;
 
