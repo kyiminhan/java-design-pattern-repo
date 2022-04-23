@@ -10,7 +10,7 @@
 	<artifactId>java-design-pattern-02-behavioral-ptn</artifactId>
 
 	<properties>
-		<spring.version>5.1.8.RELEASE</spring.version>
+		<spring.version>5.3.19</spring.version>
 	</properties>
 
 	<dependencies>
